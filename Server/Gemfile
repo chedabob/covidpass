@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'activesupport'
+gem 'cbor'
+gem 'passbook'
+gem 'sinatra', '~> 2.1'

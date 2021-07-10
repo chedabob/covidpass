@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096FDD822683C89D00C31261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FDD812683C89D00C31261 /* AppDelegate.swift */; };
+		096FDD862683C89D00C31261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FDD852683C89D00C31261 /* MainViewController.swift */; };
+		096FDD892683C89D00C31261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096FDD872683C89D00C31261 /* Main.storyboard */; };
+		096FDD8B2683C89E00C31261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096FDD8A2683C89E00C31261 /* Assets.xcassets */; };
+		096FDD8E2683C89E00C31261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096FDD8C2683C89E00C31261 /* LaunchScreen.storyboard */; };
+		09D7070F2688ADF1005093E3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7070E2688ADF1005093E3 /* Network.swift */; };
+		09D707112688AEE1005093E3 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D707102688AEE1005093E3 /* PhotoLibrary.swift */; };
+		09D707132688AF16005093E3 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D707122688AF16005093E3 /* Wallet.swift */; };
+		09D707182688AF84005093E3 /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D707172688AF84005093E3 /* Pass.swift */; };
+		09D7071E2688B10F005093E3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7071D2688B10F005093E3 /* MainViewModel.swift */; };
+		09D707202688D812005093E3 /* LoadPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7071F2688D812005093E3 /* LoadPassUseCase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		096FDD7E2683C89D00C31261 /* COVID Pass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID Pass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096FDD812683C89D00C31261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096FDD852683C89D00C31261 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		096FDD882683C89D00C31261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096FDD8A2683C89E00C31261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		096FDD8D2683C89E00C31261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		096FDD8F2683C89E00C31261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D7070E2688ADF1005093E3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		09D707102688AEE1005093E3 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		09D707122688AF16005093E3 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		09D707172688AF84005093E3 /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
+		09D7071D2688B10F005093E3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		09D7071F2688D812005093E3 /* LoadPassUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPassUseCase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096FDD7B2683C89D00C31261 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096FDD752683C89D00C31261 = {
+			isa = PBXGroup;
+			children = (
+				096FDD802683C89D00C31261 /* covidpass */,
+				096FDD7F2683C89D00C31261 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		096FDD7F2683C89D00C31261 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096FDD7E2683C89D00C31261 /* COVID Pass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096FDD802683C89D00C31261 /* covidpass */ = {
+			isa = PBXGroup;
+			children = (
+				09D7070D2688ADD1005093E3 /* Core */,
+				09D707192688B02A005093E3 /* UI */,
+				09D7071C2688B08D005093E3 /* Supporting */,
+				096FDD8A2683C89E00C31261 /* Assets.xcassets */,
+				096FDD8C2683C89E00C31261 /* LaunchScreen.storyboard */,
+				096FDD8F2683C89E00C31261 /* Info.plist */,
+			);
+			path = covidpass;
+			sourceTree = "<group>";
+		};
+		09D7070D2688ADD1005093E3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				09D707162688AF7D005093E3 /* Model */,
+				09D7070E2688ADF1005093E3 /* Network.swift */,
+				09D707102688AEE1005093E3 /* PhotoLibrary.swift */,
+				09D707122688AF16005093E3 /* Wallet.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		09D707162688AF7D005093E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09D707172688AF84005093E3 /* Pass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09D707192688B02A005093E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				09D7071B2688B04E005093E3 /* Main */,
+				096FDD872683C89D00C31261 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		09D7071B2688B04E005093E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				096FDD852683C89D00C31261 /* MainViewController.swift */,
+				09D7071D2688B10F005093E3 /* MainViewModel.swift */,
+				09D7071F2688D812005093E3 /* LoadPassUseCase.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		09D7071C2688B08D005093E3 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				096FDD812683C89D00C31261 /* AppDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096FDD7D2683C89D00C31261 /* covidpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096FDDA82683C89E00C31261 /* Build configuration list for PBXNativeTarget "covidpass" */;
+			buildPhases = (
+				096FDD7A2683C89D00C31261 /* Sources */,
+				096FDD7B2683C89D00C31261 /* Frameworks */,
+				096FDD7C2683C89D00C31261 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = covidpass;
+			packageProductDependencies = (
+			);
+			productName = covidpass;
+			productReference = 096FDD7E2683C89D00C31261 /* COVID Pass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096FDD762683C89D00C31261 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					096FDD7D2683C89D00C31261 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 096FDD792683C89D00C31261 /* Build configuration list for PBXProject "covidpass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096FDD752683C89D00C31261;
+			packageReferences = (
+			);
+			productRefGroup = 096FDD7F2683C89D00C31261 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096FDD7D2683C89D00C31261 /* covidpass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096FDD7C2683C89D00C31261 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096FDD8E2683C89E00C31261 /* LaunchScreen.storyboard in Resources */,
+				096FDD8B2683C89E00C31261 /* Assets.xcassets in Resources */,
+				096FDD892683C89D00C31261 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096FDD7A2683C89D00C31261 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D707202688D812005093E3 /* LoadPassUseCase.swift in Sources */,
+				09D707132688AF16005093E3 /* Wallet.swift in Sources */,
+				096FDD862683C89D00C31261 /* MainViewController.swift in Sources */,
+				096FDD822683C89D00C31261 /* AppDelegate.swift in Sources */,
+				09D707112688AEE1005093E3 /* PhotoLibrary.swift in Sources */,
+				09D707182688AF84005093E3 /* Pass.swift in Sources */,
+				09D7070F2688ADF1005093E3 /* Network.swift in Sources */,
+				09D7071E2688B10F005093E3 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		096FDD872683C89D00C31261 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096FDD882683C89D00C31261 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096FDD8C2683C89E00C31261 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096FDD8D2683C89E00C31261 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096FDDA62683C89E00C31261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		096FDDA72683C89E00C31261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096FDDA92683C89E00C31261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBEQ6F4V6F;
+				INFOPLIST_FILE = covidpass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattm.covidpass;
+				PRODUCT_NAME = "COVID Pass";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		096FDDAA2683C89E00C31261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBEQ6F4V6F;
+				INFOPLIST_FILE = covidpass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattm.covidpass;
+				PRODUCT_NAME = "COVID Pass";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096FDD792683C89D00C31261 /* Build configuration list for PBXProject "covidpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096FDDA62683C89E00C31261 /* Debug */,
+				096FDDA72683C89E00C31261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096FDDA82683C89E00C31261 /* Build configuration list for PBXNativeTarget "covidpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096FDDA92683C89E00C31261 /* Debug */,
+				096FDDAA2683C89E00C31261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096FDD762683C89D00C31261 /* Project object */;
+}

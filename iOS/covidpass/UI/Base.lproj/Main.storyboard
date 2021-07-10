@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="COVID_Pass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="obT-Qa-2cm">
+                                <rect key="frame" x="78.5" y="375.5" width="257.5" height="145"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVu-HU-yPf">
+                                        <rect key="frame" x="8.5" y="0.0" width="240" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTS-c9-5nB">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="QJE-6S-yZA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="Authorize"/>
+                                                <connections>
+                                                    <action selector="authorizePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wq8-UB-z5Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="NTS-c9-5nB" firstAttribute="top" secondItem="xVu-HU-yPf" secondAttribute="top" id="5K2-rA-QCZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="NTS-c9-5nB" secondAttribute="bottom" id="5og-32-6B5"/>
+                                            <constraint firstAttribute="trailing" secondItem="NTS-c9-5nB" secondAttribute="trailing" id="DXr-Pl-1Gl"/>
+                                            <constraint firstItem="NTS-c9-5nB" firstAttribute="leading" secondItem="xVu-HU-yPf" secondAttribute="leading" id="agt-MZ-flm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJL-vT-79L">
+                                        <rect key="frame" x="0.0" y="44" width="257.5" height="101"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need access to your photos to load the screenshot of the QR code. Please enabled &quot;Read and Write&quot; in Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T8-x5-uQl">
+                                                <rect key="frame" x="0.0" y="0.0" width="257.5" height="57"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="K0X-HH-32e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D0-tm-xYm">
+                                                <rect key="frame" x="0.0" y="57" width="257.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="3NA-rZ-BVN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="Settings"/>
+                                                <connections>
+                                                    <action selector="openSettingsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0d-Sp-dKz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5T8-x5-uQl" secondAttribute="trailing" id="5mR-Mi-XQS"/>
+                                            <constraint firstItem="5D0-tm-xYm" firstAttribute="leading" secondItem="KJL-vT-79L" secondAttribute="leading" id="JnE-lb-B3o"/>
+                                            <constraint firstAttribute="trailing" secondItem="5D0-tm-xYm" secondAttribute="trailing" id="Qa6-YF-gdK"/>
+                                            <constraint firstAttribute="bottom" secondItem="5D0-tm-xYm" secondAttribute="bottom" id="QkK-ea-c9f"/>
+                                            <constraint firstItem="5D0-tm-xYm" firstAttribute="top" secondItem="5T8-x5-uQl" secondAttribute="bottom" id="Uba-1u-Ezs"/>
+                                            <constraint firstItem="5T8-x5-uQl" firstAttribute="leading" secondItem="KJL-vT-79L" secondAttribute="leading" id="bG7-wJ-TN4"/>
+                                            <constraint firstItem="5T8-x5-uQl" firstAttribute="top" secondItem="KJL-vT-79L" secondAttribute="top" id="wWd-ot-xof"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="obT-Qa-2cm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwu-ui-hmh"/>
+                            <constraint firstItem="obT-Qa-2cm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eof-Dq-C5s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorizeContainer" destination="xVu-HU-yPf" id="fzT-bg-Z6e"/>
+                        <outlet property="settingsContainer" destination="KJL-vT-79L" id="jfI-gm-8ky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
